@@ -1,0 +1,4 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.scxx.base.config.DefaultProperties,\
+com.scxx.base.web.controller.GlobalController

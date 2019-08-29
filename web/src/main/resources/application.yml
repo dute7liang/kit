@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    druid:
+      username: PALADIN1
+      password: PALADIN1
+      url: jdbc:oracle:thin:@192.168.72.50:1521:ORCL
+  profiles:
+    include: business
+logging:
+  file: logs/scxx-tool.log
+  level:
+    root: info
+server:
+  port: 80
+  servlet:
+    jsp:
+      init-parameters:
+        development: true  #开启jsp页面的调试模式 正式环境不能开启
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
