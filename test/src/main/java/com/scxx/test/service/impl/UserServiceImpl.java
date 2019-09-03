@@ -3,7 +3,7 @@ package com.scxx.test.service.impl;
 import java.util.List;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.scxx.test.repository.dao.UserMapper;
+import com.scxx.test.repository.dao.one.UserMapper;
 import com.scxx.test.repository.model.TUser;
 import com.scxx.test.service.IUserService;
 

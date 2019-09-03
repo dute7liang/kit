@@ -15,6 +15,11 @@ public class TestController {
 		return "base/index";
 	}
 
+	@GetMapping("/test")
+	public String test1(){
+		return "index";
+	}
+
 
 
 }

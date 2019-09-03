@@ -12,6 +12,7 @@ import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.apache.ibatis.type.JdbcType;
 
 /**
  * <p>
@@ -38,7 +39,7 @@ public class TIpoKitTest implements Serializable {
     /**
      * 字符串
      */
-    @TableField("THIS_NAME")
+    @TableField(value = "THIS_NAME",jdbcType = JdbcType.OTHER)
     private String thisName;
 
     /**
@@ -56,7 +57,7 @@ public class TIpoKitTest implements Serializable {
     /**
      * 金额
      */
-    @TableField("THIS_PRICE")
+    @TableField(value = "THIS_PRICE")
     private BigDecimal thisPrice;
 
     /**

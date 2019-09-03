@@ -1,4 +1,4 @@
-package com.scxx.test.repository.dao;
+package com.scxx.test.repository.dao.one;
 
 import com.scxx.test.repository.model.TUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

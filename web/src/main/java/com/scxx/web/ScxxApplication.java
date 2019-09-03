@@ -18,6 +18,5 @@ public class ScxxApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ScxxApplication.class, args);
-
 	}
 }

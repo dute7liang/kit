@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    druid:
+      username: PALADIN1
+      password: PALADIN1
+      url: jdbc:oracle:thin:@192.168.72.50:1521:ORCL
+  thymeleaf:
+    cache: false # 关闭thymeleaf的缓存,仅用于开发
+logging:
+  file: logs/scxx-tool.log
+  level:
+    root: info
+server:
+  port: 81
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 开启sql日志
