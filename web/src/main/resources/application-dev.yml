@@ -7,11 +7,11 @@ spring:
   thymeleaf:
     cache: false # 关闭thymeleaf的缓存,仅用于开发
 logging:
-  file: logs/scxx-tool.log
+#  file: logs/scxx-tool.log # 开发环境不开启文件输出
   level:
     root: info
 server:
-  port: 81
+  port: 80
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 开启sql日志

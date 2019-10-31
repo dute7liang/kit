@@ -1,10 +1,11 @@
-<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org" lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link th:href="@{/element/2.12/index.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/element/2.12/css/index.css}" rel="stylesheet" type="text/css" />
+<!--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
     <style>
         .el-header {
             background-color: #B3C0D1;
@@ -19,10 +20,13 @@
 </head>
 <!-- import Vue before Element -->
 <script type="text/javascript" th:src="@{/vue/2.6.10/vue.js}"></script>
+<!--<script src="https://unpkg.com/vue/dist/vue.js"></script>-->
 <!-- import JavaScript -->
-<script type="text/javascript" th:src="@{/element/2.12/index.js}"></script>
-<script type="text/javascript" th:src="@{/js/test.js}"></script>
+<script type="text/javascript" th:src="@{/element/2.12/js/index.js}"></script>
+<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
 
+
+<script type="text/javascript" th:src="@{/js/test.js}"></script>
 <scrip></scrip>
 <body>
 <div id="app" >
@@ -109,7 +113,6 @@
         methods: {
             handleOpen(key, keyPath) {
                 console.log(it.name);
-                alert(it.name);
                 console.log(key, keyPath);
             },
             handleClose(key, keyPath) {
