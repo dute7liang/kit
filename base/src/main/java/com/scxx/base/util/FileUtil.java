@@ -72,4 +72,31 @@ public class FileUtil {
         }
         return dir.delete();
     }
+
+    public static void delDir(String dirPath) throws IOException {
+        log.info("删除文件开始:{}.",dirPath);
+        long start = System.currentTimeMillis();
+        try{
+            File dirFile = new File(dirPath);
+            if (!dirFile.exists()) {
+                return;
+            }
+            if (dirFile.isFile()) {
+                dirFile.delete();
+                return;
+            }
+            File[] files = dirFile.listFiles();
+            if(files==null){
+                return;
+            }
+            for (int i = 0; i < files.length; i++) {
+                delDir(files[i].getAbsolutePath());
+            }
+            dirFile.delete();
+            log.info("删除文件:{}. 耗时:{}ms. ",dirPath,System.currentTimeMillis()-start);
+        }catch(Exception e){
+            log.info("删除文件:{}. 异常:{}. 耗时:{}ms. ",dirPath,e,System.currentTimeMillis()-start);
+            throw new RuntimeException("删除文件异常.");
+        }
+    }
 }
