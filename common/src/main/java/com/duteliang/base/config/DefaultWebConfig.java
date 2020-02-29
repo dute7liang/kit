@@ -5,28 +5,33 @@ import java.util.regex.Pattern;
 
 import javax.annotation.PostConstruct;
 
-import com.duteliang.base.exception.ScxxException;
-import com.duteliang.base.exception.ScxxExceptionEnum;
+import com.duteliang.base.exception.KitException;
+import com.duteliang.base.exception.KitExceptionEnum;
 import com.duteliang.base.util.DateUtil;
-import com.duteliang.base.web.controller.ScxxErrorView;
+import com.duteliang.base.web.controller.KitErrorView;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.core.convert.support.GenericConversionService;
 import org.springframework.web.bind.support.ConfigurableWebBindingInitializer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 
-//@Configuration
+
+/**
+ * 绑定日期
+ */
+@Configuration
 public class DefaultWebConfig extends WebMvcConfigurationSupport {
 
     @Autowired
     private RequestMappingHandlerAdapter handlerAdapter;
 
     @Bean("error")
-    public ScxxErrorView error() {
-        return new ScxxErrorView();
+    public KitErrorView error() {
+        return new KitErrorView();
     }
 
     @PostConstruct
@@ -57,7 +62,7 @@ public class DefaultWebConfig extends WebMvcConfigurationSupport {
             } else if (timeSecondsFlag) {
                 return DateUtil.parseTime(dateString);
             } else {
-                throw new ScxxException(ScxxExceptionEnum.INVLIDE_DATE_STRING);
+                throw new KitException(KitExceptionEnum.INVLIDE_DATE_STRING);
             }
 
         }

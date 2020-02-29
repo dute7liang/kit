@@ -3,6 +3,7 @@ package com.duteliang.base.util;
 import java.util.Random;
 
 /**
+ * 随机字符串
  * @author: zl
  * @Date: 2019-10-17 15:52
  */

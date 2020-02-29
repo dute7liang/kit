@@ -10,6 +10,7 @@
         <module>common</module>
         <module>web</module>
         <module>test</module>
+        <module>security</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,16 +1,17 @@
 package com.duteliang.base.exception;
 
 /**
+ * 系统内部异常
  * @author: zl
  * @Date: 2019-8-28 14:13
  */
-public class ScxxException extends RuntimeException {
+public class KitException extends RuntimeException {
 
 	private Integer code;
 
 	private String message;
 
-	public ScxxException(ServiceExceptionEnum serviceExceptionEnum) {
+	public KitException(ServiceExceptionEnum serviceExceptionEnum) {
 		this.code = serviceExceptionEnum.getCode();
 		this.message = serviceExceptionEnum.getMessage();
 	}

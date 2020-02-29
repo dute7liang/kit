@@ -11,7 +11,7 @@ import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
 /**
- * 次压缩使用java原生的压缩方式。
+ * java原生的压缩方式。
  * 不支持文件名中文。经过测试稳定性比较好
  * @author: zl
  * @Date: 2019-10-12 10:25

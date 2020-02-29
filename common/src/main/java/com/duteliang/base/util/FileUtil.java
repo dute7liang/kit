@@ -7,8 +7,8 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 
-import com.duteliang.base.exception.ScxxException;
-import com.duteliang.base.exception.ScxxExceptionEnum;
+import com.duteliang.base.exception.KitException;
+import com.duteliang.base.exception.KitExceptionEnum;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +25,7 @@ public class FileUtil {
         File f = new File(filename);
         if (!f.exists()) {
             log.error("文件未找到！" + filename);
-            throw new ScxxException(ScxxExceptionEnum.FILE_NOT_FOUND);
+            throw new KitException(KitExceptionEnum.FILE_NOT_FOUND);
         }
         FileChannel channel = null;
         FileInputStream fs = null;
@@ -39,17 +39,17 @@ public class FileUtil {
             }
             return byteBuffer.array();
         } catch (IOException e) {
-            throw new ScxxException(ScxxExceptionEnum.FILE_READING_ERROR);
+            throw new KitException(KitExceptionEnum.FILE_READING_ERROR);
         } finally {
             try {
                 channel.close();
             } catch (IOException e) {
-                throw new ScxxException(ScxxExceptionEnum.FILE_READING_ERROR);
+                throw new KitException(KitExceptionEnum.FILE_READING_ERROR);
             }
             try {
                 fs.close();
             } catch (IOException e) {
-                throw new ScxxException(ScxxExceptionEnum.FILE_READING_ERROR);
+                throw new KitException(KitExceptionEnum.FILE_READING_ERROR);
             }
         }
     }

@@ -1,21 +1,21 @@
 package com.duteliang.base.web.controller;
 
-import java.io.UnsupportedEncodingException;
-
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
 import com.duteliang.base.support.HttpKit;
 import com.duteliang.base.util.FileUtil;
-import com.duteliang.base.web.tips.SuccessTip;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.UnsupportedEncodingException;
+
+/**
+ * 基础的控制器。
+ */
 public class BaseController {
 
     protected static String SUCCESS = "SUCCESS";
@@ -23,8 +23,6 @@ public class BaseController {
 
     protected static String REDIRECT = "redirect:";
     protected static String FORWARD = "forward:";
-
-    protected static SuccessTip SUCCESS_TIP = new SuccessTip();
 
     protected HttpServletRequest getHttpServletRequest() {
         return HttpKit.getRequest();

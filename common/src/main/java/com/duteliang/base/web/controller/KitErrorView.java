@@ -13,7 +13,7 @@ import org.springframework.web.servlet.View;
  * @author zl
  * @date 2019年8月28日14:22:55
  */
-public class ScxxErrorView implements View {
+public class KitErrorView implements View {
 
     @Override
     public String getContentType() {

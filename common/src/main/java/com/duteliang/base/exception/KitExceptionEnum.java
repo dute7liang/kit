@@ -6,7 +6,7 @@ package com.duteliang.base.exception;
  * @author zl
  * @Date 2019年8月28日14:16:05
  */
-public enum ScxxExceptionEnum implements ServiceExceptionEnum {
+public enum KitExceptionEnum implements ServiceExceptionEnum {
 
     /**
      * 其他
@@ -30,7 +30,7 @@ public enum ScxxExceptionEnum implements ServiceExceptionEnum {
     REQUEST_NULL(400, "请求有错误"),
     SERVER_ERROR(500, "服务器异常");
 
-    ScxxExceptionEnum(int code, String message) {
+    KitExceptionEnum(int code, String message) {
         this.code = code;
         this.message = message;
     }
