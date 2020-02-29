@@ -7,7 +7,7 @@
     <name>kit</name>
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>base</module>
+        <module>common</module>
         <module>web</module>
         <module>test</module>
     </modules>
@@ -23,8 +23,8 @@
         <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
         <druid.springboot.version>1.1.17</druid.springboot.version>
         <ojdbc6.version>12.1.0.1-atlassian-hosted</ojdbc6.version>
-        <!--<mysql-connector-java.version>6.0.6</mysql-connector-java.version>-->
-        <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.18</mysql-connector-java.version>
+<!--        <mysql-connector-java.version>5.1.47</mysql-connector-java.version>-->
         <sqlserver-jtds.version>1.2.4</sqlserver-jtds.version>
 
         <lombok.version>1.16.20</lombok.version>

@@ -28,7 +28,7 @@
         </dependency>
         <dependency>
             <groupId>com.scxx.tool</groupId>
-            <artifactId>base</artifactId>
+            <artifactId>common</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -89,7 +89,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.scxx.web.ScxxApplication</mainClass>
+                            <mainClass>com.duteliang.web.ScxxApplication</mainClass>
                             <!--是否添加依赖-->
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>

@@ -9,11 +9,11 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.scxx.test.repository.dao.IpoKitTestMapper;
-import com.scxx.test.repository.dao.one.UserMapper;
-import com.scxx.test.repository.model.TIpoKitTest;
-import com.scxx.test.repository.model.TUser;
-import com.scxx.web.ScxxApplication;
+import com.duteliang.test.repository.dao.IpoKitTestMapper;
+import com.duteliang.test.repository.dao.one.UserMapper;
+import com.duteliang.test.repository.model.TIpoKitTest;
+import com.duteliang.test.repository.model.TUser;
+import com.duteliang.web.ScxxApplication;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

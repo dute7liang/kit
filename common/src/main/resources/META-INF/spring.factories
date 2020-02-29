@@ -1,0 +1,4 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.duteliang.base.config.DefaultProperties,\
+com.duteliang.base.web.controller.GlobalController
