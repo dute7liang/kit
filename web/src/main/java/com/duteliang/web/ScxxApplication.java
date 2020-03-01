@@ -10,8 +10,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @author: zl
  * @Date: 2019-8-28 09:31
  */
-@SpringBootApplication(scanBasePackages = {"com.scxx"})
-@MapperScan("com.scxx.*.repository.dao")
+@SpringBootApplication(scanBasePackages = {"com.duteliang"})
+@MapperScan("com.duteliang.*.repository.dao")
 @EnableTransactionManagement
 @Slf4j
 public class ScxxApplication {

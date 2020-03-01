@@ -4,10 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.scxx.tool</groupId>
+        <groupId>com.duteliang.tool</groupId>
         <artifactId>kit</artifactId>
         <version>0.0.1</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>test</artifactId>
     <packaging>jar</packaging>
@@ -16,7 +15,7 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.scxx.tool</groupId>
+            <groupId>com.duteliang.tool</groupId>
             <artifactId>common</artifactId>
             <version>${project.version}</version>
         </dependency>

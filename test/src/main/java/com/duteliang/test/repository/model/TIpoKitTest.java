@@ -25,7 +25,7 @@ import org.apache.ibatis.type.JdbcType;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("IPO_KIT_TEST")
+@TableName("KIT_TEST")
 public class TIpoKitTest implements Serializable {
 
     private static final long serialVersionUID=1L;

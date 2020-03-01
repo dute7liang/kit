@@ -1,4 +1,4 @@
-package com.duteliang.web.aop;
+package com.duteliang.bgs.config;
 
 import com.duteliang.base.exception.KitException;
 import com.duteliang.base.support.HttpKit;

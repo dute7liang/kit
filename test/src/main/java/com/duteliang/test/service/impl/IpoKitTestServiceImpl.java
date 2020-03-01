@@ -18,4 +18,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class IpoKitTestServiceImpl extends ServiceImpl<IpoKitTestMapper, TIpoKitTest> implements IIpoKitTestService {
 
+    public void aaa(){
+
+    }
+
 }

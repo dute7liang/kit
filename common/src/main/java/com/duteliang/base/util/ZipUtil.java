@@ -1,6 +1,6 @@
 package com.duteliang.base.util;
 
-import com.duteliang.base.web.tips.Json;
+import com.duteliang.base.exception.KitException;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;
@@ -37,7 +37,7 @@ public class ZipUtil {
      * @param destDirPath     解压后的目标文件夹
      * @throws RuntimeException 解压失败会抛出运行时异常
      */
-    public static Json unZip(File srcFile, String destDirPath) throws FileNotFoundException {
+    public static void unZip(File srcFile, String destDirPath) throws FileNotFoundException {
         long start = System.currentTimeMillis();
         // 判断源文件是否存在
         if (!srcFile.exists()) {
@@ -82,8 +82,7 @@ public class ZipUtil {
             long end = System.currentTimeMillis();
             log.info("解压完成，耗时：{} ms",end - start);
         } catch (Exception e) {
-            log.error("文件解压失败！",e);
-            return new Json("文件解压失败！" + e.getMessage());
+            throw new RuntimeException("文件解压失败！",e);
         } finally {
             try {
                 if(fos != null){
@@ -99,7 +98,6 @@ public class ZipUtil {
                 // do nothing
             }
         }
-        return new Json(true,"");
     }
 
 

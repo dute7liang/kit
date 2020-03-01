@@ -1,9 +1,9 @@
-package com.duteliang.web.web;
+package com.duteliang.bgs.web;
 
 import com.duteliang.base.web.tips.CommonResult;
+import com.duteliang.bgs.service.MemberService;
 import com.duteliang.security.config.JwtProperty;
 import com.duteliang.security.util.JwtTokenUtil;
-import com.duteliang.web.service.MemberService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -12,10 +12,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,7 +22,7 @@ import java.util.Map;
  * @author: zl
  * @Date: 2019-8-28 15:32
  */
-@Controller
+@RestController
 @Slf4j
 public class TestController {
 
@@ -41,7 +39,6 @@ public class TestController {
 	private JwtProperty jwtProperty;
 
 	@GetMapping("/userInfo")
-	@ResponseBody
 	public String getUserInfo(){
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		return authentication.toString();
@@ -53,13 +50,11 @@ public class TestController {
 	}
 
 	@GetMapping("/test")
-	@ResponseBody
 	public String test1(){
 		return "index";
 	}
 
 	@GetMapping("/login")
-	@ResponseBody
 	public CommonResult login(String username,String password){
 		String token = null;
 		try {

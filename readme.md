@@ -9,7 +9,8 @@
 |common|公用模块|
 |security|权限和token鉴权模块|
 |web|bs端启动端，加入了thymeleaf|
-|admin|纯后台服务启动端|
+|admin|后台设置|
+|bgs|后台服务，前后端分离|
 
 ## 项目技术说明
 
