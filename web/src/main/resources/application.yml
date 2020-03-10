@@ -15,3 +15,9 @@ mybatis-plus:
       id-type: uuid
   mapper-locations:
   - classpath*:com/duteliang/*/repository/dao/mapper/**/*.xml
+secure:
+  ignored:
+    urls:
+      - /test
+      - /auth/login
+      - /auth/form

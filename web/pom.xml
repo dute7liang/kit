@@ -94,7 +94,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.duteliang.web.ScxxApplication</mainClass>
+                            <mainClass>com.duteliang.web.WebApplication</mainClass>
                             <!--是否添加依赖-->
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>

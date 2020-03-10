@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.duteliang.test.repository.dao.IpoKitTestMapper;
 import com.duteliang.test.repository.model.TIpoKitTest;
-import com.duteliang.web.ScxxApplication;
+import com.duteliang.web.WebApplication;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,7 +24,7 @@ import java.util.List;
  * @Date: 2019-8-29 12:04
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {ScxxApplication.class})
+@SpringBootTest(classes = {WebApplication.class})
 @Slf4j
 public class MyBatisPlusTest {
 

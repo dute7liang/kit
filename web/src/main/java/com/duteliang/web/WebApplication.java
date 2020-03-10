@@ -14,9 +14,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan("com.duteliang.*.repository.dao")
 @EnableTransactionManagement
 @Slf4j
-public class ScxxApplication {
+public class WebApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ScxxApplication.class, args);
+		SpringApplication.run(WebApplication.class, args);
 	}
 }

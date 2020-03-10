@@ -1,6 +1,5 @@
 spring:
   profiles:
-#    include: business
     active: dev
   thymeleaf:
     prefix: classpath:/templates/
