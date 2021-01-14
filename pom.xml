@@ -35,7 +35,7 @@
         <swagger.version>2.7.0</swagger.version>
         <velocity.version>2.1</velocity.version>
         <com.alibaba.fastjson.version>1.2.54</com.alibaba.fastjson.version>
-        <poi.version>3.10-FINAL</poi.version>
+        <poi.version>4.1.2</poi.version>
         <dubbo.version>2.6.5</dubbo.version>
         <jjwt.version>0.9.0</jjwt.version>
     </properties>
